@@ -1,5 +1,5 @@
-# Last updated: 3/1/2026, 10:12:33 AM
-import pandas as pd
-
-def dropDuplicateEmails(customers: pd.DataFrame) -> pd.DataFrame:
-    return customers.drop_duplicates(subset=["email"], keep="first")
+# Last updated: 3/1/2026, 10:14:34 AM
+1import pandas as pd
+2
+3def dropMissingData(students: pd.DataFrame) -> pd.DataFrame:
+4    return students.dropna(subset='name')
