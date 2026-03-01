@@ -1,5 +1,6 @@
-# Last updated: 3/1/2026, 9:56:19 AM
-import pandas as pd
-
-def selectFirstRows(employees: pd.DataFrame) -> pd.DataFrame:
-    return employees.iloc[0:3,:]
+# Last updated: 3/1/2026, 10:00:14 AM
+1import pandas as pd
+2
+3def selectData(students: pd.DataFrame) -> pd.DataFrame:
+4    return students.loc[students['student_id'] == 101, ['name','age']]
+5    
