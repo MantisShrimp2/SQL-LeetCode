@@ -1,6 +1,5 @@
-# Last updated: 3/1/2026, 10:45:27 AM
+# Last updated: 3/1/2026, 10:48:46 AM
 1import pandas as pd
 2
-3def pivotTable(weather: pd.DataFrame) -> pd.DataFrame:
-4    return weather.pivot(index='month', columns='city')['temperature']
-5    
+3def meltTable(report: pd.DataFrame) -> pd.DataFrame:
+4   return pd.melt(report, id_vars=['product'], var_name='quarter', value_name='sales')
