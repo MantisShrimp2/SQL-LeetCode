@@ -1,7 +1,6 @@
-# Last updated: 3/1/2026, 10:35:31 AM
-__import__("atexit").register(lambda: open("display_runtime.txt", "w").write("0"))
-import pandas as pd
-
-def fillMissingValues(products: pd.DataFrame) -> pd.DataFrame:
-    products['quantity'] = products['quantity'].fillna(0)
-    return products
+# Last updated: 3/1/2026, 10:37:16 AM
+1import pandas as pd
+2
+3def concatenateTables(df1: pd.DataFrame, df2: pd.DataFrame) -> pd.DataFrame:
+4    conc = pd.concat([df1,df2])
+5    return conc
