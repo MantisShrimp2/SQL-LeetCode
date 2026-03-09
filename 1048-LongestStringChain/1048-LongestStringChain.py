@@ -1,4 +1,4 @@
-# Last updated: 3/9/2026, 10:03:45 AM
+# Last updated: 3/9/2026, 10:07:13 AM
 1class Solution:
 2    def longestStrChain(self, words: List[str]) -> int:
 3        words.sort(key=len)
